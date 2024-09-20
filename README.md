@@ -27,7 +27,9 @@ Steps to Deploy
 
 Step 1: Create a DynamoDB table:
 a. For Table name, enter: http-crud-tutorial-items
-b. For Primary key, enter id
+b. For Primary key, enter id![dynamodb table](https://github.com/user-attachments/assets/c1944074-02aa-4e41-b8fb-873ec046c229)
+
+
 
 
 Step 2: Create a lambda function:
@@ -35,12 +37,16 @@ Step 2: Create a lambda function:
 a. Name: http-crud-tutorial-function
 b. Runtime: Python 3.x
 c. Execution role: IAM role with DynamoDB and API permissions
-d. Code: Use the CURD.py Python code.
+d. Code: Use the CURD.py Python code from the file above
+![lambda](https://github.com/user-attachments/assets/e926bc3d-0098-4103-8032-63308bd601a1)
 
 
-Step 3: Create an HTTP API
+
+Step 3: Create an HTTP API in API Gateway
 
 Name: http-crud-tutorial-api
+![APIGATEWAY](https://github.com/user-attachments/assets/a4be347c-f533-4d22-bfbd-8582844d6e8e)
+
 
 
 Step 4: Create routes: \
