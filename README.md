@@ -13,7 +13,8 @@ When you invoke your HTTP API, API Gateway routes the request to your Lambda fun
 
 Project Architecture:
 
-image
+![image](https://github.com/user-attachments/assets/b3935edd-73d3-41de-aae7-700fd3e04f84)
+
 
 Steps to Build the Project:
 Prerequisites
