@@ -59,6 +59,8 @@ GET /items
 PUT /items
 
 DELETE /items/{id}
+![route get,put,delete](https://github.com/user-attachments/assets/37d555cf-aae1-49f2-a45d-7af416c8fbf7)
+
 
 Step 5: Create an integration: \
 
@@ -68,6 +70,10 @@ b. Choose Integrations
 c. Choose Manage integrations and then choose Create Skip Attach this integration to a route. You complete that in a later step.
 d. For Integration type, choose Lambda function
 e. For Lambda function, enter http-crud-tutorial-function \
+
+All intergrations are attached to the Lambda function
+![intergration attachment](https://github.com/user-attachments/assets/9a592419-bf80-4c66-ac0f-17f191db63e6)
+
 
 
 Step 6: Attach your integration to routes:
@@ -89,6 +95,8 @@ Step 8: Testing:
 
 Export API Invoke URL: \
 export INVOKE_URL="https://**abcdef123**.execute-api.eu-west-1.amazonaws.com"
+![invoke url](https://github.com/user-attachments/assets/b6f39d01-4a81-4d1c-8ca2-c98dbfb574f5)
+
 
 Create or update an item. 
 
@@ -99,8 +107,17 @@ curl -X "PUT" -H "Content-Type: application/json" -d "{
   \"name\": \"myitem\"
 }" $INVOKE_URL/items
 
+![use](https://github.com/user-attachments/assets/de8278ac-fba4-494e-8b17-4ae985bd7ef3)
+
+Further verification from the item create in the dynamoDB table we created earlier. 
+We have succeesfully PUT 
+![items added](https://github.com/user-attachments/assets/8a2fcf03-0490-4199-9bbd-e17003740ea5)
+
+
+
 
 Use the following command to list all items.
+
 curl -s $INVOKE_URL/items | js-beautify 
 
 
