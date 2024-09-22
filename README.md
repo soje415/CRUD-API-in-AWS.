@@ -114,19 +114,19 @@ We have succeesfully PUT
 ![items added](https://github.com/user-attachments/assets/8a2fcf03-0490-4199-9bbd-e17003740ea5)
 
 
+Use the following command to delete an item.
+curl -X "DELETE" $INVOKE_URL/items/abcdef234
+
+![delete crud](https://github.com/user-attachments/assets/65b1291a-df9b-4725-815f-7585036f1348)
 
 
-Use the following command to list all items.
-
-curl -s $INVOKE_URL/items | js-beautify 
 
 
 Use the following command to get an item by its ID.
 curl -s $INVOKE_URL/items/abcdef234 | js-beautify
 
 
-Use the following command to delete an item.
-curl -X "DELETE" $INVOKE_URL/items/abcdef234
+
 
 
 Use the following command to list all items.
